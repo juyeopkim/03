@@ -3,16 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-  int input_int;
-  float input_float;
+  char c;
+  int i;
   
-  printf("enter an integer : ");
-  scanf("%d", &input_int);
+  printf("input a number : ");
+  scanf("%c", &c);
   
-  printf("enter a float : ");
-  scanf("%f", &input_float);
   
-  printf("integer : %d, float : %f\n", input_int, input_float);
+  i = c - '0';
+  printf("The input number ASCII is %i\n", c);
+  printf("The input number is %i\n", i);
   
   system("PAUSE");
   return 0;
